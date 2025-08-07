@@ -17,7 +17,7 @@ public class CustomerController {
     public List<Customer> findAll() {
         return customerService.findAll();
     }
-    @PostMapping
+    @PostMapping("/save")
     public Customer save(@RequestBody Customer customer) {
         return customerService.save(customer);
     }
